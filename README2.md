@@ -7,7 +7,7 @@ You need to add a header in your website, https responses need to contain a head
 Content-Security-Policy-Report-Only:default-src 'self' https: data: crwebinvoke: crwebinvokeimmediate: crwebnull:; style-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: data: about: asset: blob: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data: about:; font-src 'self' https: data:; connect-src 'self' https: data: javascript; frame-src 'self' https: data: file:; media-src 'self' https: data:; object-src 'self' https: data:; report-uri https://csp.mysite.com/reportOnly/index
 ```
 
-By doing this every moderm browser visiting your site over https will send a report to https://csp.mysite.com/reportOnly/index 
+By doing this every modern browser visiting your site over https will send a report to https://csp.mysite.com/reportOnly/index 
 everytime something is breaking any of the rules defined above.
 
 In other words, a user is browsing your site and there is an image which is loaded using http://, 
